@@ -1,0 +1,82 @@
+:root {
+  --bodyBackgroundColor: hsl(0, 0%, 100%);
+  --darkGreyBlue: hsl(224, 30%, 27%);
+  --lightSlateBlue_Background: hsl(252, 100%, 67%);
+  --royalBlue_Background: hsl(241, 81%, 54%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bodyBackgroundColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  position: relative;
+}
+
+.parentContainer {
+  position: absolute;
+  min-width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  border: solid white;
+  padding: 0;
+  box-shadow: 3px 0px 15px var(--darkGreyBlue);
+  border: none;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.childContainer_1 {
+    border-radius: 20px;
+  width: 50%;
+  background-image: linear-gradient(
+    to bottom,
+    var(--lightSlateBlue_Background),
+    var(--royalBlue_Background)
+  );
+
+}
+
+.childContainer_2 {
+  width: 50%;
+  margin-right: 10px;
+}
+
+.childContainer_1 .yourResult {
+  color: pink;
+  margin-top: 20px;
+}
+
+.score {
+  margin:30%;
+  width: 40%;
+  text-align: center;
+  color: white;
+  background-image: radial-gradient(red, blue, green);
+  border-radius: 50%;
+  padding: 5px;
+  
+}
+
+.score .marks {
+  font-size: 60px;
+  min-width: 100%;
+}
+
+.remarks {
+  word-wrap: break-word;
+  margin-bottom: 20px;
+  color:white;
+}
+
+.greatText{
+    margin-bottom: 10px;
+}
