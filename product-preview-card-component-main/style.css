@@ -1,0 +1,33 @@
+:root {
+  --background_color: hsl(30, 38%, 92%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  background-color: var(--background_color);
+}
+
+.parentContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 35em;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+}
+
+.childContainer_1 {
+}

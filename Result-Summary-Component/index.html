@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Result Summary Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Outfit&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,17 +14,19 @@
     <main class="parentContainer">
         <div class="childContainer_1">
             <h3 class="yourResult">Your Result</h2>
-             <div class="score">
-                <p> <p class="marks">76</p>
-                of 100</p>
-             </div>
+             <span class="score">
+                <span>
+                    <p class="total-marks">76</p>
+                    of 100
+                </span> 
+             </span>
              <div class="remarks">
                 <h2 class="greatText">Great</h2>
                 <p>You scored higher than 65% of the people who have taken these tests. </p>
              </div>
         </div>
         <div class="childContainer_2">
-            <h2 class="summary">Summary</h2>
+            <h2 class="summary_title">Summary</h2>
                 <div class="summary reaction">
                     <img src="images/icon-reaction.svg" alt="Reaction Icon" class="reactionIcon">
                     <h5 class="skillsName">Reaction</h5>
@@ -41,6 +46,9 @@
                     <img src="images/icon-visual.svg" alt="Reaction Icon" class="visualIcon">
                     <h5 class="skillsName">Visual</h5>
                     <h5 class="marks">80/100</h5>
+                </div>
+                <div class="continueButton">
+                    <button>Continue</button>
                 </div>
         </div>
     </main>
