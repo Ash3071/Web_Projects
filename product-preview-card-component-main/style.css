@@ -1,10 +1,15 @@
 :root {
   --background_color: hsl(30, 38%, 92%);
+  --clr-neutral-300: hsl(228, 12%, 48%);
+  --clr-primary-400: hsl(158, 36%, 37%);
+  --font-brand: "Fraunces", serif;
+  --text-perfume: "Montserrat", sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 img {
@@ -28,6 +33,105 @@ body {
   overflow: hidden;
   background-color: white;
 }
-
-.childContainer_1 {
+.childContainer_2 {
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 1em;
 }
+
+.perfumeText {
+  font-family: var(--text-perfume);
+  color: var(--clr-neutral-300);
+  letter-spacing: 0.5em;
+  font-weight: lighter;
+  font-size: small;
+}
+
+.brandNameText {
+  font-size: 1.8em;
+  font-family: var(--font-brand);
+  font-weight: 700;
+  width: 100%;
+}
+
+.descriptionText {
+  color: var(--clr-neutral-300);
+  font-size:1em;
+}
+
+.amount {
+  font-family: var(--font-brand);
+}
+
+.discountAmount {
+  font-size: 1.8em;
+  color: var(--clr-primary-400);
+  font-weight: bold;
+}
+.originalAmount {
+  margin-left: 1em;
+  text-decoration: line-through;
+  color: var(--clr-neutral-300);
+  font-weight: lighter;
+}
+
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding:0.8em;
+  border-radius: 10px;
+  background-color: var(--clr-primary-400);
+  color: white;
+  border-style: none;
+  cursor: pointer;
+}
+
+button img{
+  width: 20px;
+  height: 20px;
+}
+
+.add-to-button{
+  padding-top:2em ;
+}
+
+button:hover{
+  box-shadow: 2px 2px 10px var(--clr-primary-400);
+}
+
+@media only screen and (max-width: 650px) {
+  body{
+    padding: 0.9em;
+  }
+  .parentContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brandNameText{
+    font-size: 1.5em;
+  }
+
+  .perfumeText{
+    font-size: 0.8em;
+  }
+
+  .descriptionText{
+    font-size: 0.9em;
+  }
+
+  .discountAmount{
+    font-size: 1.5em;
+  }
+
+  .originalAmount{
+    font-size: 1em;
+  }
+
+}
+
