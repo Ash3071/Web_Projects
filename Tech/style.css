@@ -1,0 +1,231 @@
+@font-face {
+  font-family: "kaushan";
+  src: url(fonts/KaushanScript-Regular.ttf);
+}
+@font-face {
+  font-family: "dancingFont";
+  src: url(fonts/DancingScript-Regular.ttf);
+}
+
+:root {
+  --theme-color-1: #24e0ff;
+  --theme-color-2: #fe4db8;
+  --theme-color-3:white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url(images/pexels-vidal-balielo-jr-2337818.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*flex-wrap: wrap padding:120px;*/
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  box-shadow: 2px 2px 45px var(--theme-color-1);
+  transition: 0.5s;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  color: var(--theme-color-1);
+  transition: 0.5s;
+  text-shadow: 3px 3px 5px;
+}
+
+.navbar ul li ::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: var(--theme-color-1);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.navbar ul li :hover::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: var(--theme-color-1);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  box-shadow: 3px 3px 5px var(--theme-color-1);
+}
+
+.content {
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  color: white;
+  /*display: grid;*/
+}
+
+.content h1 {
+  margin: 20px;
+  font-size: 100px;
+  font-family: kaushan, sans-serif;
+  background: -webkit-linear-gradient(#24e0ff, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button {
+  margin: 5px;
+  margin-top: 30px;
+}
+
+button {
+  padding: 5px;
+  border-radius: 15px;
+  width: 120px;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  border: 2px solid var(--theme-color-1);
+  position: relative;
+  overflow: hidden;
+}
+
+span {
+  background: var(--theme-color-1);
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  box-shadow: 2px 2px 45px var(--theme-color-1);
+}
+
+/* second part */
+
+#feature {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.feature_content {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.feature_content p {
+  margin: auto;
+  font-size: 40px;
+  color: var(--theme-color-1);
+  font-family: dancingFont;
+  font-weight: bold;
+}
+
+.feature_content h2 {
+  margin: auto;
+  font-size: 20px;
+}
+
+.cakes-container {
+  display: flex;
+  gap: 1em;
+  justify-content: space-around;
+  padding: 0.5em;
+  margin: 20px;
+}
+
+.cake.one {
+  border-radius: 20px;
+  padding: 1em;
+  box-shadow: 3px 3px 10px var(--theme-color-2);
+  background-color:var(--theme-color-3);
+  border:1px solid rgba(0, 0, 0, 0.5);
+
+}
+
+.cake.two {
+  border-radius: 20px;
+  padding: 1em;
+  box-shadow: 2px 2px 10px var(--theme-color-2);
+  border:1px solid rgba(0, 0, 0, 0.5);
+
+}
+.cake.three {
+  border-radius: 20px;
+  padding: 1em;
+  box-shadow: 2px 2px 10px var(--theme-color-2);
+  border:1px solid rgba(0, 0, 0, 0.5);
+
+}
+
+.cakecontent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  color: var(--theme-color-2);
+  text-align: center;
+  padding: 1em;
+  font-family: dancingFont;
+}
+
+.cake-button {
+  display: flex;
+  justify-content: center;
+}
+
+.cake-button button {
+  width: 75%;
+  background-color: var(--theme-color-1);
+}
+
+.cake-button button:hover {
+  background-color: var(--theme-color-2);
+  border-color: var(--theme-color-2);
+  box-shadow: 2px 2px 45px var(--theme-color-2);
+}

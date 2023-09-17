@@ -143,6 +143,7 @@ body {
   gap: 1em;
   background-color: var(--Very-Dark-Grayish-Blue);
   border-radius: 6px;
+  z-index: 1;
 }
 
 .share-text {
@@ -224,20 +225,31 @@ body {
 @media only screen and (max-width: 600px) {
   body {
     padding: 1.25em;
-    max-width:100vw;
+    max-width: 100vw;
   }
   .parent-container {
     display: flex;
     flex-direction: column;
   }
 
-  .show-share-container{
-    bottom:0;
+  .share-button {
+    z-index: 2;
+  }
+  .show-share-container {
+    bottom: 0;
     right: 0;
-    min-width:100%;
+    min-width: 100%;
+    transform: translateY(30%);
   }
 
-  .triangle{
+  .card-container {
+    justify-content: left;
+    gap: 2em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+  }
+
+  .triangle {
     visibility: hidden;
   }
 }
