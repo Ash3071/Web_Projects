@@ -10,7 +10,8 @@
 :root {
   --theme-color-1: #24e0ff;
   --theme-color-2: #fe4db8;
-  --theme-color-3:white;
+  --theme-color-3: white;
+  --theme-color-4: #363e48;
 }
 
 * {
@@ -144,7 +145,7 @@ button:hover span {
 }
 
 button:hover {
-  box-shadow: 2px 2px 45px var(--theme-color-1);
+  box-shadow: 2px 2px 15px var(--theme-color-1);
 }
 
 /* second part */
@@ -152,11 +153,15 @@ button:hover {
 #feature {
   width: 100%;
   padding: 70px 0;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), */
+    /* url(images/parent_bg_2.jpg); */
+  /* border-radius: 10px; */
 }
 
 .feature_content {
   text-align: center;
-  padding-bottom: 70px;
+  background-color: white;
+  /* padding: 35px; */
 }
 
 .feature_content p {
@@ -165,6 +170,10 @@ button:hover {
   color: var(--theme-color-1);
   font-family: dancingFont;
   font-weight: bold;
+  text-shadow: 0.5px 0.5px black;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 .feature_content h2 {
@@ -176,39 +185,70 @@ button:hover {
   display: flex;
   gap: 1em;
   justify-content: space-around;
-  padding: 0.5em;
+  padding: 3em;
   margin: 20px;
+  /* box-shadow: 2px 2px 10px var(--theme-color-2); */
+  border-radius: 10px;
+  /* background-color: rgba(0, 0, 0, 0.65); */
 }
 
 .cake.one {
   border-radius: 20px;
-  padding: 1em;
-  box-shadow: 3px 3px 10px var(--theme-color-2);
-  background-color:var(--theme-color-3);
-  border:1px solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 1em;
+  background-color: var(--theme-color-3);
+  overflow: hidden;
+  /* border:1px solid rgba(0, 0, 0, 0.5); */
+  box-shadow: 2px 2px 10px var(--theme-color-1);
+}
+.cake.one h2 {
+  font-family: dancingFont;
+  padding: 10px;
+}
 
+.cake.one p {
+  color: var(--theme-color-4);
+}
+.cake.one:hover {
+  box-shadow: 2px 2px 10px var(--theme-color-2);
 }
 
 .cake.two {
   border-radius: 20px;
-  padding: 1em;
-  box-shadow: 2px 2px 10px var(--theme-color-2);
-  border:1px solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 1em;
+  box-shadow: 2px 2px 10px var(--theme-color-1);
+  background-color: var(--theme-color-3);
+  overflow: hidden;
+  /* border:1px solid rgba(0, 0, 0, 0.5); */
+}
+.cake.two h2 {
+  font-family: dancingFont;
+  padding: 10px;
+}
 
+.cake.two:hover {
+  box-shadow: 2px 2px 10px var(--theme-color-2);
 }
 .cake.three {
   border-radius: 20px;
-  padding: 1em;
+  padding-bottom: 1em;
+  box-shadow: 2px 2px 10px var(--theme-color-1);
+  background-color: var(--theme-color-3);
+  overflow: hidden;
+  /* border:1px solid rgba(0, 0, 0, 0.5); */
+}
+.cake.three h2 {
+  font-family: dancingFont;
+  padding-bottom: 10px;
+}
+.cake.three:hover {
   box-shadow: 2px 2px 10px var(--theme-color-2);
-  border:1px solid rgba(0, 0, 0, 0.5);
-
 }
 
 .cakecontent {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  color: var(--theme-color-2);
+  color: black;
   text-align: center;
   padding: 1em;
   font-family: dancingFont;
@@ -227,5 +267,6 @@ button:hover {
 .cake-button button:hover {
   background-color: var(--theme-color-2);
   border-color: var(--theme-color-2);
-  box-shadow: 2px 2px 45px var(--theme-color-2);
+  box-shadow: 2px 2px 15px var(--theme-color-2);
+  transition: 0.25s;
 }
